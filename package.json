@@ -1,0 +1,32 @@
+{
+  "name": "@homenet/plugin-datadog",
+  "version": "0.0.4",
+  "description": "Publishes metrics to DataDog from homenet",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denwilliams/homenet-plugin-datadog.git"
+  },
+  "author": "Den Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denwilliams/homenet-plugin-datadog/issues"
+  },
+  "homepage": "https://github.com/denwilliams/homenet-plugin-datadog#readme",
+  "keywords": [
+    "homenet",
+    "homenet4-plugin"
+  ],
+  "homenet4": {
+    "plugins": [ "DatadogPluginLoader" ]
+  },
+  "dependencies": {
+    "datadog-metrics": "^0.4.0"
+  },
+  "devDependencies": {
+    "@homenet/core-tsd": "^4.0.0-beta.8b"
+  }
+}
