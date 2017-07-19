@@ -32,10 +32,10 @@ export function create(annotate: any): { DatadogPluginLoader: new(...args: any[]
       this.logger.info('Loading DataDog');
 
       this.eventBus.on('value.*.*', '*', e => {
-        this.gauge(e.id, e.value);
+        this.gauge(e.name, e.data);
       });
       this.eventBus.on('trigger.*.*', 'triggered', e => {
-        this.counter(e.id);
+        this.counter(e.name);
       });
     }
 
